@@ -1,4 +1,4 @@
-let socket = io("https://scuttbutt.azurewebsites.net/");
+let socket = io("https://scuttbutt.azurewebsites.net/#");
 
 socket.on('connected', () => {
   let userName = prompt("Enter a username", "UserName");
@@ -12,6 +12,8 @@ socket.on('userInUse', () => {
 
 function logout(){
   socket.emit('logout');
+  
+
 }
 
 socket.on("ROOMS", rooms => {

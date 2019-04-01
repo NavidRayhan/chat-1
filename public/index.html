@@ -4,22 +4,23 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link rel='stylesheet' href=https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
-    <title>Hello, world!</title>
-
+   <title>Scuttle-Butt</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.slim.js"></script>
     <script src="script.js"></script>
 
 
   </head>
+
   <body>
       <div id="topOfPage" class="container fixed-top">
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
-              <a class="navbar-brand" href="#">ChatApp</a>
+          <nav class="navbartop navbar navbar-expand-lg navbar-light ">
+              <a style="font-size: 50px; font-family: Arial" class="navbar-brand" href=".">Scuttle-Butt</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -29,7 +30,7 @@
                     <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal">Switch Room</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#" onclick="logout()">Logout</a>
+                    <a class="nav-link" href="." onclick="logout()">Logout</a>
                   </li>
                 </ul>
               </div>
@@ -37,13 +38,13 @@
 
             <div class="p_sendmessage input-group mb-3">
               <input id="msgText" type="text" class="form-control" placeholder="Send Message" aria-label="Send Messaage" aria-describedby="button-addon2">
+              <script src="onEnter.js"></script>
               <div class="input-group-append">
                 <button class="btn btn-primary" type="button" onclick="sendMessage()" id="button-addon2">Send</button>
               </div>
             </div>
       </div>
-
-      <div id="MESSAGES" class="container">
+      <div style="padding-top:180px"id="MESSAGES" class="container">
 
       </div>
 
@@ -71,6 +72,14 @@
         </div>
       </div>
     </div>
+    <div class="footer" style="margin-top: 100px">
+      <div style="display: inline;">
+          <a href= "https://navidrayhan.com" id="NAVID" class="zoom"> NAVID |</a>
+          <a style="font-size:33px;" href="https://www.linkedin.com/in/navidrayhan/"class="fab fa-linkedin zoom"></a>
+          <a style="font-size:33px" href="https://github.com/NavidRayhan" class=" zoom fab fa-github "></a>
+          <a style="font-size:33px" href="mailto:work.navidrayhan@gmail.com" class="fas fa-envelope zoom"></a>
+      </div>
+      </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
